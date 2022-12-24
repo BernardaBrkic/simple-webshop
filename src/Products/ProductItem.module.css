@@ -1,0 +1,31 @@
+.product {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #f7e8dd;
+}
+.product h3 {
+  color: #cb9256;
+}
+.product span {
+  color: #a15933;
+}
+.product p:not(:last-child) {
+  padding: 1rem 0 0.5rem 0;
+}
+.info p:last-child {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .product{
+    flex-direction: column;
+  }
+  .product li{
+    align-items: flex-start;
+  }
+}

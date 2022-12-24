@@ -1,0 +1,33 @@
+form.form {
+  display: flex;
+  flex-direction: column;
+}
+form.form button {
+  background-color: #a15933;
+  color: #f7e8dd;
+  border: 0;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transform: scale(1);
+}
+form.form button:hover {
+  background-color: #cb9256;
+  color: #f7e8dd;
+}
+form.form label {
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+form.form button:active {
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 992px) {
+  form.form {
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
+}

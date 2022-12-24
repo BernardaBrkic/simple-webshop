@@ -1,0 +1,54 @@
+button.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #f7e8dd;
+  background-color: #a15933;
+  border: 0;
+  height: fit-content;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+}
+button.button span {
+  margin: 0 0.2rem;
+  font-size: 1rem;
+}
+button.button span:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 1rem;
+  padding-bottom: 0.2rem;
+  font-weight: bold;
+  background-color: #cb9256;
+  color: #f7e8dd;
+}
+button.button:hover {
+  transition: 0.2s;
+  transform: scale(1.04);
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
